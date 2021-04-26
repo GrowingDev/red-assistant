@@ -1,8 +1,22 @@
+html {
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 .input-label {
   display: flex;
   flex-direction: column;
-
-  
 }
 
 .input-default {
@@ -10,20 +24,20 @@
   font-size: 1.1rem !important;
 }
 
-.button{
-  outline:0;
+.button {
+  outline: 0;
   border: none;
-  height:30px !important;
-  display:flex;
+  height: 30px !important;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .button-default {
-  background:#B70E0C  !important;
+  background: #b70e0c !important;
   color: white !important;
   text-decoration: none !important;
-  margin-bottom:10px;
-  margin-top:10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

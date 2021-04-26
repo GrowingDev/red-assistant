@@ -5,7 +5,7 @@
     </div>
     <div id="login-body">
       <form @submit.prevent>
-        <h1>Welcome Back</h1>
+        <h2>Welcome Back</h2>
         <div class="input-label">
           <label for="email">Email</label>
           <input
@@ -86,6 +86,7 @@ export default {
 #login-footer {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   flex: 2;
 }
 
