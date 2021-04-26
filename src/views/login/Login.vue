@@ -75,11 +75,13 @@ export default {
 #login-body {
   display: flex;
   flex-direction: column;
+
   flex: 1;
    form {
     width: 100%;
     display: flex;
     flex-direction: column;
+      align-items: center;
   }
 }
 
