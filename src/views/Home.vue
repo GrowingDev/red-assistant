@@ -5,7 +5,7 @@
     </div>
     <div id="home-body">
       <router-link class="button button-default" to="/login">Anmelden</router-link>
-      <router-link class="button button-default" to="/signup">Anmelden</router-link>
+      <router-link class="button button-default" to="/signup">Registrieren</router-link>
     </div>
     <div id="home-footer">
       <p href="">v0.01</p>
