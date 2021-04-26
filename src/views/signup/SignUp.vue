@@ -1,11 +1,11 @@
 <template>
-  <div id="login">
-    <div id="login-header">
-      <img alt="Vue logo" src="../../assets/logo.png" />
+  <div id="signup">
+    <div id="signup-header">
+      <img alt="Vue logo" src="@/assets/logo.png" />
     </div>
-    <div id="login-body">
+    <div id="signup-body">
       <form @submit.prevent>
-        <h1>Welcome Back</h1>
+        <h1>Welcome</h1>
         <div class="input-label">
           <label for="email">Email</label>
           <input
@@ -13,7 +13,7 @@
             v-model.trim="loginForm.email"
             placeholder="you@email.com"
             id="email"
-             class="input-default"
+            class="input-default"
             autocomplete
           />
         </div>
@@ -28,12 +28,12 @@
             autocomplete
           />
         </div>
-        <button class="button button-default" @click="login()">Log In</button>
+        <button class="button button-default" @click="login()">
+          Registrieren
+        </button>
       </form>
     </div>
-    <div id="login-footer">
-      <a>Forgot Password</a>
-    </div>
+    <div id="signup-footer"></div>
   </div>
 </template>
 
@@ -48,8 +48,8 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.$store.dispatch("login", {
+    signup() {
+      this.$store.dispatch("signup", {
         email: this.loginForm.email,
         password: this.loginForm.password,
       });
@@ -59,35 +59,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#login {
+#signup {
   display: flex;
   height: 100vh;
   flex-direction: column;
   padding: 15px;
 }
-#login-header {
+#signup-header {
   display: flex;
   flex: 1;
   justify-content: center;
   align-items: center;
 }
 
-#login-body {
+#signup-body {
   display: flex;
   flex-direction: column;
   flex: 1;
-   form {
+  form {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
 }
 
-#login-footer {
+#signup-footer {
   display: flex;
   flex-direction: column;
   flex: 2;
 }
-
-
 </style>
