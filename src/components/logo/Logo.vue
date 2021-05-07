@@ -24,8 +24,8 @@ export default {
 @media only screen and (min-width: 800px) {
 #logo{
     img{
-        width: 300px;
-        margin-left: -150px;;
+        width: 280px;
+        margin-left: -140px;;
     }
 }
 }

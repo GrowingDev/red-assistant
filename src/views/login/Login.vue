@@ -24,15 +24,15 @@
         <button class="button button-default" @click="login()">Anmelden</button>
       </form>
     </div>
-    <red-cross-logo />
+  
   </div>
 </template>
 
 <script>
-import RedCrossLogo from "../../components/red-cross/RedCrossLogo.vue";
+
 import Logo from "@/components/logo/Logo.vue";
 export default {
-  components: { RedCrossLogo, Logo },
+  components: { Logo },
   data() {
     return {
       loginForm: {
@@ -62,8 +62,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  color: black;
+  width: 100%;
 }
 
 #login-body {

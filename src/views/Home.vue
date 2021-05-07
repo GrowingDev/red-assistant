@@ -1,49 +1,24 @@
 <template>
-  <div id="login">
-
-      <logo />
-
-       <router-link to="/login" class="button button-default" >Anmelden</router-link>
-        <router-link to="/login" class="button button-default" >Registrieren</router-link>
-   <!--  
-    <div id="login-body">
- <form @submit.prevent>
-        <h3>LOGIN</h3>
-          <input
-            type="text"
-            v-model.trim="loginForm.email"
-            placeholder="your@email.com"
-            id="email"
-             class="input-default"
-            autocomplete
-          />
-          <input
-            type="password"
-            v-model.trim="loginForm.password"
-            placeholder="Password"
-            id="password"
-            class="input-default"
-            autocomplete
-          />
-        <button class="button button-default" @click="login()">Anmelden</button>
-      </form>
-    
+  <div id="home">
+    <logo />
+    <div id="home-buttons">
+      <router-link to="/login" class="button button-default"
+        >Anmelden</router-link
+      >
+      <router-link to="/login" class="button button-default"
+        >Registrieren</router-link
+      >
     </div>
-    <div id="login-footer">
-      <a>Forgot Password</a>
-    </div>
-      -->
-      <red-cross-logo />
   </div>
 </template>
 
 <script>
-import Logo from '../components/logo/Logo.vue';
-import RedCrossLogo from '../components/red-cross/RedCrossLogo.vue';
+import Logo from "../components/logo/Logo.vue";
+import RedCrossLogo from "../components/red-cross/RedCrossLogo.vue";
 export default {
   components: {
     RedCrossLogo,
-    Logo
+    Logo,
   },
   data() {
     return {
@@ -65,48 +40,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#login {
+#home {
   display: flex;
-  height: 100%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
   color: black;
-
-
-}
-
-#login-header {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#login-body {
-  display: flex;
-  flex-direction: column;
-  h2 {
-    margin-bottom: 20px;
-  }
-  flex: 1;
-  form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h3 {
-      font-weight: 400;
-    }
-  }
-}
-
-#login-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex: 2;
 }
 </style>

@@ -4,7 +4,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 *,
@@ -22,8 +21,8 @@ html {
 .input-default {
   outline: 0;
   font-size: 1rem !important;
-  max-width:300px;
-  min-width:280px;
+  max-width: 300px;
+  min-width: 280px;
 }
 
 .button {
@@ -36,7 +35,7 @@ html {
   align-items: center;
   cursor: pointer;
 }
-.button-default:hover{
+.button-default:hover {
   background: #790907 !important;
 }
 
@@ -46,34 +45,34 @@ html {
   text-decoration: none !important;
   margin-bottom: 5px;
   margin-top: 5px;
-  max-width:300px;
-  min-width:280px;
+  max-width: 300px;
+  min-width: 280px;
   border-radius: 4px;
   font-weight: 400 !important;
   font-size: 16px !important;
   text-transform: uppercase;
 }
 .input-default {
-  border:none;
+  border: none !important;
+  border-radius: none;
   background: lightgray;
-  height:35px;
-  display:flex;
+  height: 35px;
+  display: flex;
   text-align: center;
-  margin-top:5px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
-.input-default:hover{
-  background: darkgray
+.input-default:hover {
+  background: darkgray;
 }
 .page {
   padding: 15px;
-
 }
 
-.text-center{
+.text-center {
   text-align: center !important;
   align-items: center !important;
 }
-.placeholder{
-  height:80px;
+.placeholder {
+  height: 80px;
 }

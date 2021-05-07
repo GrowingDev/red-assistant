@@ -7,7 +7,7 @@
         </button>
       </div>
       <div id="nav-center"> 
-          <img src="@/assets/logo.png" alt="" /></div>
+      <h2>{{$route.name.toUpperCase()}}</h2></div>
       <div id="nav-right"></div>
     </nav>
   </div>
@@ -15,7 +15,7 @@
 <script>
 export default {
   name: "NavigationBar",
-  emits: ['toogleMenu']
+  emits: ['toogleMenu'],
 };
 </script>
 <style lang="scss" scoped>
@@ -36,9 +36,9 @@ export default {
 }
 #nav-center {
   flex: 2;
-  img {
-      height: 20px;
-      width: auto;
+  text-align: center;
+  h2{
+    color: #790907 !important;
   }
 }
 #nav-right {
