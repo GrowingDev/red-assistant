@@ -5,7 +5,7 @@
     </div>
     <div id="login-body">
       <form @submit.prevent>
-        <h2>Welcome Back</h2>
+        <h2>Login</h2>
         <div class="input-label">
           <label for="email">Email</label>
           <input

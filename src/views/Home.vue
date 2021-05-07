@@ -2,6 +2,8 @@
   <div id="home">
     <div id="home-header">
     <img alt="Vue logo" src="@/assets/logo.png">
+    <h3>DesignCenter</h3>
+    <h3>Linz</h3>
     </div>
     <div id="home-body">
       <router-link class="button button-default" to="/login">Anmelden</router-link>
@@ -34,6 +36,7 @@ export default {
 #home-header {
   display: flex;
   flex: 1;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
