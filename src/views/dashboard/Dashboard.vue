@@ -1,34 +1,51 @@
 <template>
-  <div class="page">
+  <div class="page dashboard">
+    <div id="dashboard-ph"></div>
+    <label-bottom :data="schedules.openTimes" name="ÖFFNUNGSZEITEN" />
+    <div id="dashboard-ph"></div>
+    <label-bottom :data="mission.vaccine.name" name="IMPFSTOFF" />
+    <div id="dashboard-ph"></div>
+
+    <span class="dashboard-section">TERMINE</span>
+    <dashboard-schedules :schedules="schedules" />
+    <div id="dashboard-ph"></div>
+        <span class="dashboard-section">BESONDERHEITEN</span>
+    <dashboard-events :events="mission.events" />
 
   </div>
 </template>
 
 <script>
+import LabelTop from "../../components/labels/LabelTop.vue";
+import LabelBottom from "@/components/labels/LabelBottom.vue";
+import DashboardSchedules from "./components/DashboardSchedules.vue";
+import DashboardEvents from "./components/DashboardEvents.vue";
 export default {
   name: "Dashboard",
-  props: {
-    
+  components: {
+    LabelTop,
+    LabelBottom,
+    DashboardSchedules,
+    DashboardEvents,
   },
+  props: {},
   data() {
     return {
+      schedules: {
+        openTimes: "12:30 - 16:45",
+        nextDate: "1.Mai",
+        total: "900",
+        open: "700",
+        checked: "100",
+      },
       mission: {
         vaccine: {
-          name: "pfizer",
+          name: "Astra Zeneca",
           percent: "30",
-          description: [
-            "Vektorimpfstoff",
-            "mNRA-Impfstoff"
-          ]
+          description: ["Vektorimpfstoff", "mNRA-Impfstoff"],
         },
-        patients: {
-          amount: "900",
-          groups: [
-            "Bildungspersonal",
-            "Ü65"
-          ]
-        },
-        time: '12:30 - 18:45'
+        events:
+          "Heute werden Feuerwehr und Bildungspersonal geimpft, desweiteren kommt der Bürgermeister um 15 Uhr",
       },
     };
   },
@@ -36,39 +53,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card {
-  background: white;
-  border-radius: 4px;
-  width: 100%;
-  height: 150px;
-  padding: 16px;
+#dashboard-ph {
+  height: 60px;
+}
+.dashboard {
+  text-align: center;
+  color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  text-align: start;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-    h1{
-      font-size: 30px;
-    }
-}
-.card-title{
-
-}
-.card-body {
-
-}
-#label-vaccine {
- color: #b70e0c;
- text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-footer {
-
-}
-.placeholder{
-  min-height:15px;
-  width:100%;
+.dashboard-section {
+  font-size: 20px;
+  font-weight: 500;
 }
 </style>
