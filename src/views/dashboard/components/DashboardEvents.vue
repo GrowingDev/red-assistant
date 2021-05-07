@@ -19,8 +19,9 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  text-justify: auto;
 }
 </style>

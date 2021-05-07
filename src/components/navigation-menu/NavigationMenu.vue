@@ -1,6 +1,6 @@
 <template>
   <div v-if="visible" id="navigation-menu">
-      <p>menu</p>
+      <h1>menu</h1>
   </div>
 </template>
 
@@ -16,12 +16,18 @@ export default {
 <style lang="scss" scoped>
 #navigation-menu{
     background: #b70e0c !important;
-    width: 300px;
+    width: 100%;
     height:100vh;
     position: absolute;
+    padding-top:70px;
+    padding:15px;
     left:0;
     top:0;
     bottom:0;
     z-index:10;
+    color:white !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 </style>

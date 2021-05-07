@@ -24,12 +24,13 @@ export default {
   text-align: center;
   h1 {
     font-size: 30px;
-    color: #790907;
+    font-weight: 400;
+    color: #FD0303;
   }
   span{
       font-size:20px;
       color:black;
-      font-weight: 500;
+      font-weight: bold;
   }
 }
 </style>

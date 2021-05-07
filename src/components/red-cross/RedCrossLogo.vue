@@ -13,13 +13,14 @@ export default {
 <style lang="scss" scoped>
 #rc-logo {
   img{
-position: absolute;
+position: fixed;
   left: 50%;
   width: 100px;
   height: auto;
   bottom: 30px;
   margin-top: -50px; /* Half the height */
   margin-left: -50px;
+  z-index: -1;
   }
   
 }

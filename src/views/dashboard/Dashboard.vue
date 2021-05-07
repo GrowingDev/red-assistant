@@ -45,7 +45,7 @@ export default {
           description: ["Vektorimpfstoff", "mNRA-Impfstoff"],
         },
         events:
-          "Heute werden Feuerwehr und Bildungspersonal geimpft, desweiteren kommt der Bürgermeister um 15 Uhr",
+          "Heute werden Feuerwehr und Bildungspersonal geimpft, desweiteren kommt der Bürgermeister um 15 Uhr.",
       },
     };
   },
@@ -67,6 +67,6 @@ export default {
 
 .dashboard-section {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: bold;
 }
 </style>

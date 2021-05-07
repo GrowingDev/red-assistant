@@ -1,12 +1,14 @@
 <template>
   <div id="dashboard-schedules">
-    <label-top :data="schedules.nextDate" name="Folgetermin" />
+
+        <label-top :data="schedules.nextDate" name="Folgetermin" />
     <div class="border"></div>
     <label-top :data="schedules.total" name="Gebucht" />
-
+        <div class="border"></div>
+    <label-top :data="schedules.checked" name="Eingecheckt" />
+        <div class="border"></div>
     <label-top :data="schedules.open" name="Offen" />
 
-    <label-top :data="schedules.checked" name="Eingecheckt" />
   </div>
 </template>
 

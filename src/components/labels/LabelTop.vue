@@ -24,11 +24,12 @@ export default {
   margin:10px;
   h1 {
     font-size: 20px;
-    color: #790907;
+    font-weight: 400;
+    color: #FD0303;
   }
   span{
       font-size:16px;
-      color:black;
+      color:rgb(114, 114, 114);
       font-weight: 500;
   }
 }

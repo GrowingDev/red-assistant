@@ -5,6 +5,7 @@
         <button id="nav-toogle" @click="$emit('toogleMenu')">
           <img src="@/assets/icons/menu_black.svg" alt="" />
         </button>
+      
       </div>
       <div id="nav-center"> 
       <h2>{{$route.name.toUpperCase()}}</h2></div>
@@ -38,7 +39,7 @@ export default {
   flex: 2;
   text-align: center;
   h2{
-    color: #790907 !important;
+    color: black !important;
   }
 }
 #nav-right {
