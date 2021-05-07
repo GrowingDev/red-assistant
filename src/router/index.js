@@ -58,4 +58,8 @@ router.beforeEach((to, from, next) => {
   }
 });
 
+auth.onAuthStateChanged(() => {
+  console.log(auth.currentUser)
+});
+
 export default router;
