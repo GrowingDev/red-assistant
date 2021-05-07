@@ -6,28 +6,22 @@
     <div id="login-body">
       <form @submit.prevent>
         <h2>Login</h2>
-        <div class="input-label">
-          <label for="email">Email</label>
           <input
             type="text"
             v-model.trim="loginForm.email"
-            placeholder="you@email.com"
+            placeholder="your@email.com"
             id="email"
              class="input-default"
             autocomplete
           />
-        </div>
-        <div class="input-label">
-          <label for="pwd">Password</label>
           <input
             type="password"
             v-model.trim="loginForm.password"
-            placeholder="******"
+            placeholder="Password"
             id="password"
             class="input-default"
             autocomplete
           />
-        </div>
         <button class="button button-default" @click="login()">Log In</button>
       </form>
     </div>
@@ -49,7 +43,7 @@ export default {
   },
   methods: {
     login() {
-      this.$store.dispatch("login", {
+      this.$store.dispatch("signIn", {
         email: this.loginForm.email,
         password: this.loginForm.password,
       });
@@ -75,7 +69,9 @@ export default {
 #login-body {
   display: flex;
   flex-direction: column;
-
+h2{
+  margin-bottom: 20px;
+}
   flex: 1;
    form {
     width: 100%;

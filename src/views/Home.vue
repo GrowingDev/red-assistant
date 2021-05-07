@@ -46,7 +46,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 2;
+  flex: 1;
 }
 
 #home-footer {

@@ -37,7 +37,7 @@ export default {
 #nav-center {
   flex: 2;
   img {
-      height: 30px;
+      height: 20px;
       width: auto;
   }
 }
