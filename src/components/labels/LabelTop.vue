@@ -21,11 +21,11 @@ export default {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin:10px;
+
   h1 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
-    color: #FD0303;
+    color: #FE0000;
   }
   span{
       font-size:16px;

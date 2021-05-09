@@ -23,12 +23,13 @@ html {
   font-size: 1rem !important;
   max-width: 300px;
   min-width: 280px;
+  width:300px;
 }
 
 .button {
   outline: 0;
   border: none;
-  height: 35px !important;
+  height: 50px !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,11 +44,9 @@ html {
   background: #b70e0c !important;
   color: white !important;
   text-decoration: none !important;
-  margin-bottom: 5px;
-  margin-top: 5px;
   max-width: 300px;
   min-width: 280px;
-  border-radius: 4px;
+  width:300px;
   font-weight: 400 !important;
   font-size: 16px !important;
   text-transform: uppercase;
@@ -55,12 +54,10 @@ html {
 .input-default {
   border: none !important;
   border-radius: none;
-  background: lightgray;
-  height: 35px;
+  background: lightgray !important;
+  height: 45px;
   display: flex;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .input-default:hover {
   background: darkgray;

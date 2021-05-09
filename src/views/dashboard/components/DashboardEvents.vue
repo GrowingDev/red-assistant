@@ -21,7 +21,7 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
+  text-align: start;
   text-justify: auto;
 }
 </style>

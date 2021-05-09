@@ -28,7 +28,8 @@ position: fixed;
 @media only screen and (min-width: 800px) {
   #rc-logo {
     img{
-      left:92%;
+     right:60px;
+      left:auto;
  bottom: 30px;
     }
   }

@@ -1,14 +1,12 @@
 <template>
   <div id="dashboard-schedules">
-
-        <label-top :data="schedules.nextDate" name="Folgetermin" />
+    <label-top :data="schedules.nextDate" name="Folgetermin" />
     <div class="border"></div>
     <label-top :data="schedules.total" name="Gebucht" />
-        <div class="border"></div>
+    <div class="border"></div>
     <label-top :data="schedules.checked" name="Eingecheckt" />
-        <div class="border"></div>
+    <div class="border"></div>
     <label-top :data="schedules.open" name="Offen" />
-
   </div>
 </template>
 
@@ -32,11 +30,11 @@ export default {
 #dashboard-schedules {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap-reverse;
   align-items: center;
   text-align: center;
-
+  width: 100%;
   .border {
     border-left: 1px solid #d6d6d6;
     height: 40px;

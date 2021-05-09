@@ -1,8 +1,7 @@
 <template>
   <div id="label-bottom">
- 
-    <span>{{ name}}</span>
-       <h1>{{ data }}</h1>
+    <span>{{ name }}</span>
+    <h1>{{ data }}</h1>
   </div>
 </template>
 
@@ -21,16 +20,18 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: start;
+
   h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
-    color: #FD0303;
+    color: #fe0000;
+    margin-top: 5px;
   }
-  span{
-      font-size:20px;
-      color:black;
-      font-weight: bold;
+  span {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
   }
 }
 </style>

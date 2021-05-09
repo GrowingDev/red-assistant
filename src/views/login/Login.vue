@@ -1,7 +1,7 @@
 <template>
   <div id="login">
     <logo />
-  <h2 style="color: #790907;margin-bottom: 30px;">LOGIN</h2>
+  <h2 style="margin-bottom: 30px;">LOGIN</h2>
     <div id="login-body">
       <form @submit.prevent>
         <input
@@ -12,6 +12,7 @@
           class="input-default"
           autocomplete
         />
+        <div id="ph-small"></div>
         <input
           type="password"
           v-model.trim="loginForm.password"
@@ -55,6 +56,9 @@ export default {
 <style lang="scss" scoped>
 #ph{
   height: 30px;
+}
+#ph-small{
+  height:15px
 }
 #login {
   display: flex;

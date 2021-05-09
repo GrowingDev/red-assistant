@@ -5,6 +5,7 @@
       <router-link to="/login" class="button button-default"
         >Anmelden</router-link
       >
+      <div id="home-ph"></div>
       <router-link to="/login" class="button button-default"
         >Registrieren</router-link
       >
@@ -47,5 +48,9 @@ export default {
   justify-content: center;
   align-items: center;
   color: black;
+}
+#home-ph{
+  height:40px;
+  width:auto;
 }
 </style>
