@@ -41,6 +41,17 @@ const routes = [
       requiresAuth: true,
     },
   },
+  {
+    path: "/streets",
+    name: "streets",
+    component: () =>
+      import(
+        /* webpackChunkName: "streets" */ "../views/streets/Streets.vue"
+      ),
+    meta: {
+      requiresAuth: true,
+    },
+  },
 ];
 
 const router = createRouter({

@@ -1,6 +1,8 @@
 <template>
   <div v-if="visible" id="navigation-menu">
-      <h1>menu</h1>
+     <router-link to="/streets" class="button button-default"
+        >Impfstraßen</router-link
+      >
   </div>
 </template>
 
