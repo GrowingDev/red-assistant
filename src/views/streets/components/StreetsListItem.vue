@@ -6,7 +6,7 @@
       </div>
       <div class="streets-list-items-counter">
           <h3>{{ street.injections }}</h3>
-          <span>Bestellte Spritzen</span>
+          <span>Spritzen</span>
       </div>
     </li>
   </div>
@@ -32,7 +32,8 @@ export default {
   justify-content: flex-start;
   height: 80px;
   margin-bottom: 10px;
-  background: white;
+  background: #fbfbfb;
+  width:100%;
 
   .streets-list-item-number {
     display: flex;
