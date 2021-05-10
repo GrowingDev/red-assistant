@@ -22,11 +22,27 @@ export default {
       streets: [
         {
           number: "1",
-          injections: "1",
+          injections: "20",
         },
         {
           number: "2",
-          injections: "1",
+          injections: "20",
+        },
+         {
+          number: "3",
+          injections: "20",
+        },
+         {
+          number: "4",
+          injections: "20",
+        },
+         {
+          number: "5",
+          injections: "20",
+        },
+         {
+          number: "6",
+          injections: "20",
         },
       ],
     };

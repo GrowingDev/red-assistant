@@ -43,7 +43,7 @@ const routes = [
   },
   {
     path: "/streets",
-    name: "streets",
+    name: "Impfstraßen",
     component: () =>
       import(
         /* webpackChunkName: "streets" */ "../views/streets/Streets.vue"

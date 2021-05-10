@@ -4,6 +4,10 @@
       <div class="streets-list-item-number">
         <h3>{{ street.number }}</h3>
       </div>
+      <div class="streets-list-items-counter">
+          <h3>{{ street.injections }}</h3>
+          <span>Bestellte Spritzen</span>
+      </div>
     </li>
   </div>
 </template>
@@ -28,14 +32,56 @@ export default {
   justify-content: flex-start;
   height: 80px;
   margin-bottom: 10px;
+  background: white;
+
+  .streets-list-item-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    border-right: 1px solid #e2e2e2;
+    width: 50px;
+    flex: 1
+  }
 }
-.streets-list-item-number {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: red;
-  border-right: 1px solid darkgray;
-  width: 80px;
+
+.streets-list-item:hover {
+  background: #790907;
+  .streets-list-item-number {
+    color: white;
+  }
+  .streets-list-items-counter{
+
+    h3 {
+    font-size: 18px;
+
+    color: white;
+
+  }
+  span {
+    font-size: 14px;
+    color: white;
+
+  }
 }
+}
+.streets-list-items-counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 3;
+    h3 {
+    font-size: 16px;
+    color: #fe0000;
+  }
+  span {
+      font-weight: 600;
+    font-size: 14px;
+    color: #555555;
+
+  }
+}
+
 </style>
