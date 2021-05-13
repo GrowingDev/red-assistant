@@ -23,5 +23,6 @@ export default {
   align-items: center;
   text-align: start;
   text-justify: auto;
+  width: 100%;
 }
 </style>

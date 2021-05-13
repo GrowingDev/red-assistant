@@ -40,8 +40,28 @@ export default {
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: "Dunant";
+  src: local("Dunant-Regular"),
+   url(./fonts/Dunant-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dunant";
+  src: local("Dunant-Light"),
+   url(./fonts/Dunant-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dunant";
+  src: local("Dunant-Medium"),
+   url(./fonts/Dunant-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dunant";
+  src: local("Dunant-Bold"),
+   url(./fonts/Dunant-Bold.ttf) format("truetype");
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Dunant, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

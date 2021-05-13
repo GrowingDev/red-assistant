@@ -43,6 +43,7 @@ export default {
     color: red;
     border-right: 1px solid #e2e2e2;
     width: 50px;
+    font-size: 20px;
     flex: 1
   }
 }

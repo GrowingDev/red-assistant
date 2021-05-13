@@ -1,21 +1,24 @@
 <template>
   <div class="page dashboard">
-
     <div id="dashboard-top">
-      <label-bottom :data="schedules.openTimes" name="ÖFFNUNGSZEITEN" />
-      <label-bottom :data="mission.vaccine.name" name="IMPFSTOFF" />
-    </div>
-
-    <div id="dashboard-center">
-      <span class="dashboard-section">TERMINE</span>
-      <dashboard-schedules :schedules="schedules" />
+      <div id="dashboard-open">
+        <label-bottom :data="schedules.openTimes" name="ÖFFNUNGSZEITEN" />
+      </div>
+      <div id="dashboard-schedules">
+        <span>TERMINE</span>
+        <dashboard-schedules :schedules="schedules" />
+      </div>
     </div>
 
     <div id="dashboard-bottom">
-      <span class="dashboard-section">BESONDERHEITEN</span>
-      <dashboard-events :events="mission.events" />
+      <div id="dashboard-vaccine">
+        <label-bottom  :data="mission.vaccine.name" name="IMPFSTOFF" />
+      </div>
+      <div id="dashboard-briefing">
+        <span class="dashboard-section">BESONDERHEITEN</span>
+        <dashboard-events :events="mission.events" />
+      </div>
     </div>
-
   </div>
 </template>
 
@@ -57,42 +60,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.dashboard {
-  text-align: center;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-#dashboard-top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 600px;
-  padding-top:100px;
-  padding-bottom: 100px;
-}
-#dashboard-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 600px;
-  padding-bottom: 50px;
-}
-#dashboard-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 600px;
-}
 
-.dashboard-section {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 </style>
