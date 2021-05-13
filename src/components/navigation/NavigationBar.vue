@@ -26,6 +26,8 @@ export default {
   width:100%;
   z-index: 11;
   background: white;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 #nav {
   display: flex;

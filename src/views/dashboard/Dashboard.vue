@@ -1,18 +1,14 @@
 <template>
   <div class="page dashboard">
-    <div id="dashboard-top">
-      <div id="dashboard-open">
-        <h1></h1>
-      </div>
-      <div id="dashboard-schedules">
-          <h1></h1>
-      </div>
+    <div id="dashboard-left">
+      <h1>Öffnungszeiten</h1>
+      <p>12:30 - 18:40</p>
+      <p>12:30 - 18:40</p>
     </div>
-
-    <div id="dashboard-bottom">
-      <div id="dashboard-vaccine"></div>
-      <div id="dashboard-briefing"></div>
-    </div>
+    <div id="dashboard-right">
+        <h1>Termine</h1>
+        
+      </div>
   </div>
 </template>
 
@@ -56,30 +52,34 @@ export default {
 <style lang="scss" scoped>
 .dashboard {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-background: rgb(183,14,12);
-background: linear-gradient(0deg, #B70E0C 50%, rgba(253,3,3,1) 100%);
-  width:100%;
-  height:100vh;
+  align-items:center;
+  background: rgb(183, 14, 12);
+  background: linear-gradient(0deg, #b70e0c 30%, rgba(253, 3, 3, 1) 100%);
+  width: 100%;
+  height: 100vh;
+}
+#dashboard-left, #dashboard-right {
+  display: flex;
+  flex-direction: column;
+  color:white;
   h1{
-    font-size: 20px;
+    font-size: 22px !important;
+    text-transform: uppercase;
+    font-family: Dunant-Medium;
+  }
+  p {
+    font-size: 26px;
+    font-family: Dunant-Light;
   }
 }
-#dashboard-top {
-  display: flex;
-  flex-direction: row;
-
-  #dashboard-open {
-    width: 45%;
-    text-align: center;
-
-  }
-
-  #dashboard-schedules {
-    width: 50%;
-    text-align: start;
-
-  }
+#dashboard-left{
+  flex: 1;
+  padding: 100px;
+}
+#dashboard-right{
+  flex:2;
+  padding:100px;
 }
 </style>
