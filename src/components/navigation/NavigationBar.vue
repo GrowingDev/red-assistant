@@ -21,8 +21,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 #navigation-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width:100%;
   z-index: 11;
   background: white;
 }
@@ -40,6 +41,7 @@ export default {
   text-align: center;
   h2{
     color: black !important;
+  font-size: 20px;
   }
 }
 #nav-right {

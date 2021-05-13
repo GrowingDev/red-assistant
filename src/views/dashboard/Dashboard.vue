@@ -2,22 +2,16 @@
   <div class="page dashboard">
     <div id="dashboard-top">
       <div id="dashboard-open">
-        <label-bottom :data="schedules.openTimes" name="ÖFFNUNGSZEITEN" />
+        <h1></h1>
       </div>
       <div id="dashboard-schedules">
-        <span>TERMINE</span>
-        <dashboard-schedules :schedules="schedules" />
+          <h1></h1>
       </div>
     </div>
 
     <div id="dashboard-bottom">
-      <div id="dashboard-vaccine">
-        <label-bottom  :data="mission.vaccine.name" name="IMPFSTOFF" />
-      </div>
-      <div id="dashboard-briefing">
-        <span class="dashboard-section">BESONDERHEITEN</span>
-        <dashboard-events :events="mission.events" />
-      </div>
+      <div id="dashboard-vaccine"></div>
+      <div id="dashboard-briefing"></div>
     </div>
   </div>
 </template>
@@ -60,5 +54,32 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+background: rgb(183,14,12);
+background: linear-gradient(0deg, #B70E0C 50%, rgba(253,3,3,1) 100%);
+  width:100%;
+  height:100vh;
+  h1{
+    font-size: 20px;
+  }
+}
+#dashboard-top {
+  display: flex;
+  flex-direction: row;
 
+  #dashboard-open {
+    width: 45%;
+    text-align: center;
+
+  }
+
+  #dashboard-schedules {
+    width: 50%;
+    text-align: start;
+
+  }
+}
 </style>
