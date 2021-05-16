@@ -29,12 +29,14 @@ html {
 .button {
   outline: 0;
   border: none;
-  height: 50px !important;
+  height: 45px !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: Dunant-Bold;
+
 }
 .button-default:hover {
   background: #790907 !important;
