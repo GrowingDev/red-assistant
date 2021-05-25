@@ -42,11 +42,11 @@ const routes = [
     },
   },
   {
-    path: "/streets",
-    name: "Impfstraßen",
+    path: "/lines",
+    name: "Impflinien",
     component: () =>
       import(
-        /* webpackChunkName: "streets" */ "../views/streets/Streets.vue"
+        /* webpackChunkName: "lines" */ "../views/lines/Lines.vue"
       ),
     meta: {
       requiresAuth: true,

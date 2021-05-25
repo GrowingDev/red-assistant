@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation-bar @toogle-menu="toogleMenu" v-if="user" />
-    <navigation-menu :visible="toogle" />
+    <navigation-menu @toogle-menu="toogleMenu" :visible="toogle" />
     <router-view />
     <red-cross-logo />
   </div>
@@ -43,22 +43,19 @@ export default {
 @font-face {
   font-family: "Dunant-Regular";
   src: local("Dunant-Regular"),
-   url(./fonts/Dunant-Regular.ttf) format("truetype");
+    url(./fonts/Dunant-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Dunant-Light";
-  src: local("Dunant-Light"),
-   url(./fonts/Dunant-Light.ttf) format("truetype");
+  src: local("Dunant-Light"), url(./fonts/Dunant-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Dunant-Medium";
-  src: local("Dunant-Medium"),
-   url(./fonts/Dunant-Medium.ttf) format("truetype");
+  src: local("Dunant-Medium"), url(./fonts/Dunant-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "Dunant-Bold";
-  src: local("Dunant-Bold"),
-   url(./fonts/Dunant-Bold.ttf) format("truetype");
+  src: local("Dunant-Bold"), url(./fonts/Dunant-Bold.ttf) format("truetype");
 }
 #app {
   font-family: Dunant-Light, Helvetica, Arial, sans-serif;
