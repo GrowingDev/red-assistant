@@ -32,7 +32,7 @@ return {
     {
       title: "Checklisten",
       path: "/checkLists",
-    },
+    }
   ],
 }
   }

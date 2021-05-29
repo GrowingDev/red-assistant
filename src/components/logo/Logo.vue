@@ -19,6 +19,7 @@ export default {
         top:15%;
         left:50%;
         margin-left: -100px;
+        z-index:10;
     }
 }
 @media only screen and (min-width: 800px) {

@@ -11,6 +11,7 @@
 import NavigationBar from "@/components/navigation/NavigationBar";
 import NavigationMenu from "@/components/navigation-menu/NavigationMenu";
 import RedCrossLogo from "@/components/red-cross/RedCrossLogo.vue";
+import {mapGetters} from 'vuex'
 export default {
   components: {
     NavigationBar,
@@ -20,21 +21,14 @@ export default {
   data() {
     return {
       toogle: false,
-      auth: false,
     };
   },
-  computed: {
-    user() {
-      return this.$store.getters.getUser;
-    },
-  },
+  computed: mapGetters("auth",['user']),
   methods: {
     toogleMenu() {
       this.toogle = !this.toogle;
     },
-    checkAuth() {
-      this.$store.dispatch("checkAuth");
-    },
+
   },
 };
 </script>

@@ -8,7 +8,7 @@ import '@/assets/css/main.scss';
 auth.onAuthStateChanged((user) => {
   if (user) {
     console.log(user);
-    store.dispatch("fetchUserProfile", user);
+    store.dispatch("auth/fetchUserProfile", user);
   }
 });
 

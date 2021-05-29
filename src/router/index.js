@@ -52,6 +52,17 @@ const routes = [
       requiresAuth: true,
     },
   },
+  {
+    path: "/line",
+    name: "Impflinie",
+    component: () =>
+      import(
+        /* webpackChunkName: "line" */ "../views/line/Line.vue"
+      ),
+    meta: {
+      requiresAuth: true,
+    },
+  },
 ];
 
 const router = createRouter({

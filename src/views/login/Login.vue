@@ -22,7 +22,7 @@
           autocomplete
         />
         <div id="ph"></div>
-        <button class="button button-default" @click="login()">Anmelden</button>
+        <button class="button button-default" @click="signIn(loginForm)">Anmelden</button>
       </form>
     </div>
   
@@ -32,6 +32,7 @@
 <script>
 
 import Logo from "@/components/logo/Logo.vue";
+import {mapActions} from 'vuex';
 export default {
   components: { Logo },
   data() {
@@ -43,13 +44,11 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.$store.dispatch("signIn", {
-        email: this.loginForm.email,
-        password: this.loginForm.password,
-      });
-    },
-  },
+     ...mapActions("auth", ["signIn"]),
+   
+  }
+    
+  
 };
 </script>
 

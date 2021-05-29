@@ -88,7 +88,6 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: rgb(183, 14, 12);
   background: linear-gradient(0deg, #b70e0c 30%, rgba(253, 3, 3, 1) 100%);
   width: 100%;
   height: 100vh;

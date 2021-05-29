@@ -1,36 +1,31 @@
 <template>
   <div id="streets">
     <ul>
-      <streets-list-item
-        v-for="line in lines"
-        :street="line"
-        :key="line.number"
-      />
+      <LinesListItem v-for="line in list" :line="line" :key="line.number" />
     </ul>
   </div>
 </template>
 
 <script>
-import StreetsListItem from "./components/StreetsListItem.vue";
+import LinesListItem from "./components/LinesListItem.vue";
+import { mapGetters } from "vuex";
+
 export default {
   name: "Lines",
   components: {
-    StreetsListItem,
+    LinesListItem,
   },
-  props:{
-    lines: Array,
-  }
-  
+  computed: mapGetters("lines", ["list"]),
 };
 </script>
 
 <style lang="scss" scoped>
 #streets {
-  margin-top:100px;
   padding: 15px;
+  padding-top: 100px;
+  background: linear-gradient(0deg, #b70e0c 30%, rgba(253, 3, 3, 1) 100%);
   ul {
     padding: 0 !important;
-  
   }
 }
 </style>

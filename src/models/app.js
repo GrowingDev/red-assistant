@@ -15,23 +15,23 @@ export const app = {
   },
   lines: [
     {
-      Number: 1,
+      id: 1,
       orders: [],
     },
     {
-        Number: 2,
+        id: 2,
         orders: [],
       },
       {
-        Number: 3,
+        id: 3,
         orders: [],
       },
       {
-        Number: 4,
+        id: 4,
         orders: [],
       },
       {
-        Number: 5,
+        id: 5,
         orders: [],
       },
       {
