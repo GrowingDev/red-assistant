@@ -27,7 +27,7 @@ return {
     },
     {
       title: "Impflinien",
-      path: "/lines",
+      path: "/vaccination-lines",
     },
     {
       title: "Checklisten",
@@ -52,11 +52,12 @@ return {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 11;
   color: white !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,0.15) !important;
 }
 .button-navigation-menu {
   background: none !important;

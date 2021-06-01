@@ -42,22 +42,22 @@ const routes = [
     },
   },
   {
-    path: "/lines",
+    path: "/vaccination-lines",
     name: "Impflinien",
     component: () =>
       import(
-        /* webpackChunkName: "lines" */ "../views/lines/Lines.vue"
+        /* webpackChunkName: "lines" */ "../views/vaccination-lines/VaccinationLines.vue"
       ),
     meta: {
       requiresAuth: true,
     },
   },
   {
-    path: "/line",
+    path: "/vaccination-line/:id",
     name: "Impflinie",
     component: () =>
       import(
-        /* webpackChunkName: "line" */ "../views/line/Line.vue"
+        /* webpackChunkName: "line" */ "../views/vaccination-line/VaccinationLine.vue"
       ),
     meta: {
       requiresAuth: true,

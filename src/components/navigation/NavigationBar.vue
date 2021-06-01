@@ -3,12 +3,21 @@
     <nav id="nav">
       <div id="nav-left">
         <button id="nav-toogle" @click="$emit('toogleMenu')">
-          <img src="@/assets/icons/menu_black.svg" alt="" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#b90d0c"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
         </button>
-      
       </div>
-      <div id="nav-center"> 
-      <h2>{{$route.name.toUpperCase()}}</h2></div>
+      <div id="nav-center">
+        <h2>{{ $route.name.toUpperCase() }}</h2>
+      </div>
       <div id="nav-right"></div>
     </nav>
   </div>
@@ -16,24 +25,25 @@
 <script>
 export default {
   name: "NavigationBar",
-  emits: ['toogleMenu'],
+  emits: ["toogleMenu"],
 };
 </script>
 <style lang="scss" scoped>
 #navigation-bar {
   position: fixed;
   top: 0;
-  width:100%;
-  z-index: 11;
+  width: 100%;
+  height: 4.615rem;
+  z-index: 12;
   background: white;
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
-    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 #nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 #nav-left {
   flex: 1;
@@ -41,9 +51,9 @@ export default {
 #nav-center {
   flex: 2;
   text-align: center;
-  h2{
+  h2 {
     color: black !important;
-  font-size: 20px;
+    font-family: Dunant-Light;
   }
 }
 #nav-right {
@@ -57,5 +67,6 @@ export default {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding:none;
 }
 </style>

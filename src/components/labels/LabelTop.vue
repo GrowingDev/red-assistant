@@ -1,13 +1,12 @@
 <template>
   <div id="label-top">
     <h1>{{ data }}</h1>
-    <span>{{ name}}</span>
+    <span>{{ name }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "LabelTop",
   props: {
     data: String,
     name: String,
@@ -25,12 +24,12 @@ export default {
   h1 {
     font-size: 24px;
     font-weight: 400;
-    color: #FE0000;
+    color: #fe0000;
   }
-  span{
-      font-size:16px;
-      color:rgb(114, 114, 114);
-      font-weight: 500;
+  span {
+    font-size: 16px;
+    color: #c0c0c0;
+    font-family: Dunant-Medium;
   }
 }
 </style>

@@ -1,5 +1,5 @@
-import {app} from '../../models/app'
-export const lines = {
+// import {app} from '../../models/app'
+export const vaccinationLines = {
     namespaced: true,
     state: () => ({
         list: [

@@ -7,7 +7,6 @@
 
 <script>
 export default {
-  name: "LabelBottom",
   props: {
     data: String,
     name: String,

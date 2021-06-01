@@ -20,7 +20,7 @@ position: fixed;
   bottom: 30px;
   margin-top: -50px; /* Half the height */
   margin-left: -50px;
-  z-index: -1;
+
   }
   
 }
